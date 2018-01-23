@@ -1,4 +1,4 @@
-var rusheaSlider;
+var Slider;
 var thatgirldreaa;
 var Bruno;
 
@@ -7,8 +7,8 @@ function setup(){
     background(0);
     
     //createSlider(min,max, default)
-    rusheaSlider = createSlider(0,255,113);
-    rusheaSlider.position(20,20);
+    Slider = createSlider(0,255,113);
+    Slider.position(20,20);
     thatgirldreaa = createSlider(0,255,225);
     thatgirldreaa.position(20,50);
     Bruno = createSlider(0,255,60);
@@ -16,7 +16,7 @@ function setup(){
 }
 
 function draw(){
-    redValue = rusheaSlider.value();
+    redValue = Slider.value();
     greenValue = thatgirldreaa.value();
     blueValue = Bruno.value();
     background(redValue,greenValue, blueValue);
